@@ -119,7 +119,7 @@ $result = $conn->query($sql);
             while ($row = $result->fetch_assoc()) {
                 echo '<div class="col-6 col-md-3 mb-3">';
                 echo '    <div class="card">';
-                echo '        <img src="' . $row["gambar_produk"] . '" class="card-img-top" alt="' . $row["nama_produk"] . '">';
+                echo '        <img src="uploads/' . $row["gambar_produk"] . '" class="card-img-top" alt="' . $row["nama_produk"] . '">';
                 echo '        <div class="card-body">';
                 echo '            <h5 class="card-title">' . $row["nama_produk"] . '</h5>';
                 echo '            <p class="card-text">Rp' . number_format($row["harga_produk"], 0, ',', '.') . '</p>';

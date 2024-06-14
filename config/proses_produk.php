@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
             echo "Ukuran gambar terlalu besar. Maksimum 5MB yang diizinkan.";
         } else {
             // Tentukan direktori tujuan penyimpanan gambar
-            $target_dir = dirname(__FILE__) . '/..//'; // Mengarahkan ke direktori 
+            $target_dir = dirname(__FILE__) . '/../uploads/'; // Mengarahkan ke direktori 
             $target_path = $target_dir . basename($gambar_produk_name);
 
             // Memeriksa apakah direktori tujuan ada, jika tidak buat direktori tersebut
@@ -76,7 +76,7 @@ if (isset($_POST['submit'])) {
                 exit;
             } else {
                 // Tentukan direktori tujuan penyimpanan gambar
-                $target_dir = dirname(__FILE__) . '/..//'; // Mengarahkan ke direktori 
+                $target_dir = dirname(__FILE__) . '/../uploads/'; // Mengarahkan ke direktori 
                 $target_path = $target_dir . basename($gambar_produk_name);
 
                 // Memeriksa apakah direktori tujuan ada, jika tidak buat direktori tersebut

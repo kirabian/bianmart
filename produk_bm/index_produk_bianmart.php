@@ -80,7 +80,7 @@ $result = $conn->query($sql);
                         echo "<td>" . $row["kategori"] . "</td>"; // Menampilkan kategori
                         echo "<td>" . $row["harga_produk"] . "</td>";
                         echo "<td>" . $row["detail_produk"] . "</td>";
-                        echo "<td><img src='" . $row["gambar_produk"] . "' alt='Gambar Produk' class='img-fluid'></td>";
+                        echo "<td><img src='uploads/" . $row["gambar_produk"] . "' alt='Gambar Produk' class='img-fluid'></td>";
                         echo "<td class='action-buttons'>";
                         echo "<a href='?page=editproduk&id=" . $row["id_produk"] . "' class='btn btn-warning btn-sm'>Edit</a>";
                         echo "<a href='?page=hapusproduk&id=" . $row["id_produk"] . "' class='btn btn-danger btn-sm' onclick='return confirm(\"Apakah Anda yakin ingin menghapus produk ini?\")'>Hapus</a>";
